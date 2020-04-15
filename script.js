@@ -1,18 +1,25 @@
 
-// //doer function, not a maker function
+// // Doer function (not a maker function)
+
 // function applyGoatMode(){
-//     //Select body element
-//     const bodyElement = document.querySelector("body"); //will select one element at a time
-//     console.log("this should be the body element",bodyElement);
-//     //apply class of .goat-mode to the body element.
+//     // Select the body element
+//     const bodyElement = document.querySelector("body");
+//     console.log("this should be the body element", bodyElement);
+//     // Apply a class of ".goat-mode" to the body element
 //     bodyElement.classList.add("goat-mode");
 
-//     //select all of list items and turn their background colors orange
-//     const listItems = document.querySelectorAll(".list-item");
-//     console.log(listItems)
-//     listItems.classList.add("orange-background");
+//     // Select ALL of the list items
+//     const listItems = document.querySelectorAll(".list-item")
+//     console.log("this should be ALL the list items", listItems);
+
+//     // Turn their background colors orange
+
+//     for(let i = 0; i < listItems.length; i++){
+//         listItems[i].classList.add("orange-background");
+//     }
 // }
-// applyGoatMode();
+
+// applyGoatMode(); 
 
 // Practice
 // Add the following code to a new HTML file. Make sure you include a stylesheet named blog.css.
@@ -33,8 +40,12 @@ changeText()
 
 
 // Use JavaScript to obtain a reference to all article__header elements and change their classList property value to article__header important.
-
-
+let everyHeader=document.querySelectorAll(".article__header");
+// console.log(everyHeader);
+for(let i = 0; i < everyHeader.length; i++){
+everyHeader[i].classList.add("important");
+}
+console.log(everyHeader);
 // Obtain a reference the element with a class of dashed and remove it.
 
 
